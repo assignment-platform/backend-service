@@ -16,9 +16,9 @@ import java.util.stream.Collectors;
 
 @Component
 public class SimpleExecutor implements Executor {
-    @Value("${homework.compiler.outfile}")
+    @Value("${assignment.compiler.outfile}")
     private String executable;
-    @Value("${homework.executor.timeout}")
+    @Value("${assignment.executor.timeout}")
     private int timeout;
 
     @Override

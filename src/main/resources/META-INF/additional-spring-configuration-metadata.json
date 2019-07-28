@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "assignment.executor.timeout",
+      "type": "java.lang.String",
+      "description": "Description for assignment.executor.timeout."
+  }
+] }
