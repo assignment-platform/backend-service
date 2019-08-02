@@ -16,13 +16,13 @@ import java.util.stream.Collectors;
 
 @Component
 public class SimpleCompiler implements Compiler {
-    @Value("${homework.compiler.command}")
+    @Value("${assignment.compiler.command}")  // sPEL表达式
     private String command;
-    @Value("${homework.compiler.path}")
+    @Value("${assignment.compiler.path}")
     private String path;
-    @Value("${homework.compiler.infile}")
+    @Value("${assignment.compiler.infile}")
     private String infile;
-    @Value("${homework.compiler.outfile}")
+    @Value("${assignment.compiler.outfile}")
     private String outfile;
 
 

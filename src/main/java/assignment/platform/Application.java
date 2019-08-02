@@ -7,7 +7,6 @@ import assignment.platform.domain.TestCase;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -21,7 +20,7 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-    @Bean
+//    @Bean
     CommandLineRunner init(Compiler compiler, Executor executor) {
         return args -> {
             Result result = compiler.compile("002");
